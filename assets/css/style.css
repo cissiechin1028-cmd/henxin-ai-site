@@ -1025,3 +1025,45 @@ font-weight:700!important;
 white-space:normal!important;
 }
 }
+
+
+
+/* === Mobile refinement === */
+@media (max-width:768px){
+.hero h1{
+font-size:40px!important;
+line-height:1.12!important;
+letter-spacing:-0.03em!important;
+font-weight:700!important;
+white-space:normal!important;
+}
+.phone{
+max-height:560px!important;
+height:auto!important;
+overflow:hidden!important;
+}
+.hero-visual .phone,
+.phone-wrap .phone{
+max-height:560px!important;
+}
+.features-grid,.feature-grid{
+text-align:left!important;
+}
+.features-grid .feature-card,
+.feature-card{
+text-align:left!important;
+}
+.features-grid .feature-card h3,
+.feature-card h3,
+.features-grid .feature-card p,
+.feature-card p{
+text-align:left!important;
+margin-left:0!important;
+margin-right:0!important;
+}
+.section-title,
+.features-header,
+.features>h2{
+text-align:center!important;
+}
+}
