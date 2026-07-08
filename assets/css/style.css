@@ -967,64 +967,29 @@ text-align:center;
 
 @media (max-width:768px){
 html,body{overflow-x:hidden;}
-.site-header{height:72px;padding:0 16px;}
+.site-header{height:76px;padding:0 18px;}
+.header-inner{padding:0;}
 .nav{display:none;}
-.header-inner{padding:0 10px;}
-.hero{display:flex;flex-direction:column;padding:12px 0 0;gap:28px;min-height:auto;width:calc(100% - 32px);}
-.hero-copy{text-align:center;}
-.hero-label{margin:0 auto 14px;}
-
-.hero-lead{margin:0 auto 22px;font-size:16px;line-height:1.8;max-width:100%;}
-
-.hero-tags{
-justify-content:center;
-flex-wrap:wrap;
-gap:12px;
-margin-bottom:26px;
-}
-
-.hero-actions{
-justify-content:center;
-flex-wrap:wrap;
-gap:16px;
-}
-
-.phone-wrap{
-order:2;
-margin-top:8px;
-display:flex;
-justify-content:center;
-}
-
-.phone{
-width:min(340px,88vw);
-min-height:auto;
-}
-
-.analysis-card{
-position:relative;
-right:auto;
-bottom:auto;
-margin:-36px auto 0;
-width:min(320px,84vw);
-}
-
-.section,
-.demo-section,
-.faq-section,
-.final-cta{
-padding-top:56px;
-padding-bottom:56px;
-}
-
-.cta-card{padding:48px 28px;}
-
-.cta-card h2{font-size:40px;}
-
+.hero{display:flex;flex-direction:column;align-items:center;gap:36px;width:100%;padding:24px 20px 0;min-height:auto;}
+.hero-copy{width:100%;text-align:center;}
+.hero-label{margin:0 auto 18px;}
+.hero h1{font-size:56px;line-height:1.15;letter-spacing:-0.04em;max-width:340px;margin:0 auto 22px;font-weight:800;}
+.hero-lead{font-size:17px;line-height:1.9;max-width:340px;margin:0 auto 26px;}
+.hero-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:26px;}
+.hero-actions{display:flex;flex-direction:column;align-items:center;gap:14px;width:100%;}
+.hero-actions .primary-btn,.hero-actions .secondary-btn{width:min(340px,100%);}
+.phone-wrap{display:flex;justify-content:center;width:100%;margin:18px 0 0;}
+.demo-card{display:flex;flex-direction:column;gap:18px;align-items:center;}
+.phone{width:min(360px,92vw);}
+.analysis-card{position:relative;right:auto;bottom:auto;width:min(360px,92vw);margin:0 auto;}
+.feature-grid,.why-grid,.proof{grid-template-columns:1fr;}
+.feature-card{padding:36px 28px;}
+.section,.demo-section,.faq-section,.final-cta{padding:64px 20px;}
+.cta-card{padding:44px 24px;}
+.cta-card h2{font-size:34px;}
+.footer{flex-direction:column;text-align:center;}
 .footer-links{justify-content:center;}
-
 }
-
 .phone,
 .glow {
   will-change: transform;
