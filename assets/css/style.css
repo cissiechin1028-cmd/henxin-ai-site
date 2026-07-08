@@ -711,7 +711,7 @@ button {
 .reply-suggestion{
   margin-top:26px;
   padding:22px;
-  border-radius:24px;
+  border-radius:20px;
   background:rgba(124,44,255,.06);
   border:1px solid rgba(124,44,255,.10);
 }
@@ -1068,3 +1068,22 @@ margin-right:0!important;
 text-align:center!important;
 }
 }
+
+
+.phone{
+border:8px solid #d7d9df;
+background:#fff;
+box-shadow:0 22px 55px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.9);
+}
+.analysis-card.image-card{
+right:-12px;
+bottom:80px;
+width:220px;
+padding:0;
+background:none;
+border:none;
+box-shadow:0 24px 60px rgba(0,0,0,.18);
+overflow:hidden;
+border-radius:20px;
+}
+.analysis-card.image-card img{display:block;width:100%;height:auto;}
