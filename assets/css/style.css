@@ -1014,3 +1014,14 @@ font-weight:700 !important;
 white-space:normal !important;
 }
 }
+
+
+@media (max-width:768px){
+.hero h1{
+font-size:42px!important;
+line-height:1.12!important;
+letter-spacing:-0.03em!important;
+font-weight:700!important;
+white-space:normal!important;
+}
+}
