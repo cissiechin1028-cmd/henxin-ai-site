@@ -1002,3 +1002,15 @@ text-align:center;
 .demo-left,.demo-right{width:100%!important;max-width:360px!important;margin:0 auto!important}
 .feature-grid{display:grid!important;grid-template-columns:1fr!important}
 }
+
+
+/* mobile hero title refinement */
+@media (max-width:768px){
+.hero h1{
+font-size:42px !important;
+line-height:1.12 !important;
+letter-spacing:-0.03em !important;
+font-weight:700 !important;
+white-space:normal !important;
+}
+}
