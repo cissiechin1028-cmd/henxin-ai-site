@@ -111,7 +111,7 @@ button {
 
 .brand {
   display: inline-flex;
-  align-items: center;
+  align-items: stretch;
   gap: 10px;
   font-weight: 700;
   letter-spacing: -0.04em;
@@ -1028,7 +1028,7 @@ text-align:center;
 
   .hero-visual {
     width: 100%;
-    max-width: none; width:100%;
+    max-width: none;
     margin: -6px auto 0;
     display: flex;
     justify-content: center;
@@ -1037,8 +1037,7 @@ text-align:center;
   }
 
   .phone-wrap {
-    width:100%; max-width:none;
-    max-width: 100%;
+    width:100%;
     padding: 0 0 20px;
     margin: 0 auto;
     position: relative;
