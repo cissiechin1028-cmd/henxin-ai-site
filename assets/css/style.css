@@ -976,18 +976,20 @@ text-align:center;
 
   .site-header { padding: 16px 18px; }
 
+  /* Mobile Hero: single source of truth */
   .hero {
-    width: calc(100% - 24px);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 32px 0 48px;
+    gap: 24px;
+    padding: 32px 12px 48px;
     text-align: center;
   }
 
   .hero-copy {
-    max-width: 100%;
+    width: 100%;
+    max-width: 360px;
     margin: 0 auto;
     text-align: center;
   }
@@ -1030,96 +1032,47 @@ text-align:center;
 
   .hero-visual {
     width: 100%;
-    max-width: none;
-    margin: -6px auto 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin: 0 auto;
     overflow: visible;
   }
 
   .phone-wrap {
-    width:87%;
-    padding: 0 0 20px;
-    margin: 0 auto;
-    transform: translateX(10px);
+    width: min(86vw, 340px);
     position: relative;
+    margin: 0 auto;
+    padding: 0 0 36px;
     overflow: visible;
+    transform: translateX(6px);
   }
 
   .phone {
-    width: calc(100% - 24px);
-    aspect-ratio: 9 / 17.2;
+    width: 100%;
     height: auto;
-    padding: 18px 12px 16px;
-    border-radius: 48px;
+    aspect-ratio: 9 / 18.2;
     margin: 0 auto;
-    background: #fff;
+    padding: 18px 14px 16px;
     border: 5px solid #d7dbe2;
+    border-radius: 44px;
+    background: #fff;
     box-shadow: 0 18px 36px rgba(20,24,38,.14);
+    overflow: hidden;
   }
 
   .analysis-card {
-    width: 170px;
-    right:-18px;
-    bottom: 26px;
+    width: 150px;
+    right: -10px;
+    bottom: 20px;
     z-index: 5;
   }
-}
 
-
-/* Mobile hero final scale adjustment */
-@media (max-width:768px){
-  .phone-wrap{
-    transform: scale(0.87);
-    transform-origin: top center;
-    margin-left: 10px;
+  .analysis-card.image-card img,
+  .analysis-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
   }
 }
 
-
-
-
-/* ===== Clean Mobile Hero ===== */
-@media (max-width:768px){
-  .hero{
-    padding:24px 12px 40px;
-  }
-  .hero-visual{
-    display:flex;
-    justify-content:center;
-    overflow:visible;
-    width:100%;
-  }
-  .phone-wrap{
-    position:relative;
-    width:100%;
-    max-width:360px;
-    margin:0 auto;
-    display:flex;
-    justify-content:center;
-    transform:none;
-  }
-  .phone{
-    width:100%;
-    max-width:320px;
-    aspect-ratio:9/18;
-    height:auto;
-  }
-  .analysis-card{
-    position:absolute;
-    width:165px;
-    right:-12px;
-    bottom:42px;
-  }
-}
-
-
-/* MOBILE HERO REBUILD OVERRIDE */
-@media (max-width:768px){
-.hero{display:flex;flex-direction:column;align-items:stretch;padding-left:12px;padding-right:12px;}
-.hero-visual{width:100%;max-width:none;display:flex;justify-content:center;overflow:visible;}
-.phone-wrap{position:relative;width:100%;display:flex;justify-content:center;transform:none!important;margin:0;}
-.phone{width:min(82vw,320px)!important;height:auto!important;aspect-ratio:9/19.5;transform:none!important;}
-.analysis-card{width:150px!important;right:-12px!important;bottom:18px!important;transform:none!important;}
-}

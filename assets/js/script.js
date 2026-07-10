@@ -75,7 +75,7 @@ if (phone) {
     const y = Math.sin(angle) * 3.5;
     const r = 0;
 
-    phone.style.transform = `translateY(${y}px) scale(0.87)`;
+    phone.style.transform = `translateY(${y}px)`;
 
     requestAnimationFrame(floatPhone);
   }
