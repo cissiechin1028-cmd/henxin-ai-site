@@ -949,7 +949,7 @@ text-align:center;
 
 .analysis-card {
   position: absolute;
-  right: -12px;
+  right: -18px;
   bottom: 76px;
   width: 210px;
   padding: 0;
@@ -1037,7 +1037,7 @@ text-align:center;
   }
 
   .phone-wrap {
-    width: min(340px, calc(100vw - 44px));
+    width: min(368px, calc(100vw - 24px));
     max-width: 100%;
     padding: 0 0 20px;
     margin: 0 auto;
@@ -1049,8 +1049,8 @@ text-align:center;
     width: 100%;
     aspect-ratio: 9 / 19.5;
     height: auto;
-    padding: 20px 16px 18px;
-    border-radius: 44px;
+    padding: 22px 17px 20px;
+    border-radius: 48px;
     margin: 0 auto;
     background: #fff;
     border: 5px solid #d7dbe2;
@@ -1058,9 +1058,9 @@ text-align:center;
   }
 
   .analysis-card {
-    width: 178px;
-    right: -12px;
-    bottom: 30px;
+    width: 192px;
+    right: -18px;
+    bottom: 20px;
     z-index: 5;
   }
 }
