@@ -934,6 +934,7 @@ text-align:center;
 }
 
 .phone {
+    margin: 0 auto;
   width:338px;
   height: 650px;
   margin: 0 auto;
@@ -1045,7 +1046,7 @@ text-align:center;
   }
 
   .phone {
-    width: 100%;
+    width: calc(100% - 24px);
     aspect-ratio: 9 / 19.5;
     height: auto;
     padding: 20px 12px 18px;
