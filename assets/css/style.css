@@ -1092,3 +1092,14 @@ text-align:center;
     margin:0 auto !important;
   }
 }
+
+
+@media (max-width:768px){
+  .phone-wrap{
+    transform: translateX(10px);
+  }
+  .analysis-card{
+    transform: scale(.87);
+    transform-origin: bottom right;
+  }
+}
