@@ -971,6 +971,10 @@ text-align:center;
   border-radius: 18px;
 }
 
+.analysis-summary {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav { display: none; }
 
@@ -1040,10 +1044,10 @@ text-align:center;
   }
 
   .phone-wrap {
-    width: min(78vw, 300px);
+    width: min(86vw, 330px);
     position: relative;
     margin: 0 auto;
-    padding: 0 0 28px;
+    padding: 0 0 128px;
     overflow: visible;
     transform: none;
   }
@@ -1062,16 +1066,87 @@ text-align:center;
   }
 
   .analysis-card {
-    width: 132px;
-    right: -24px;
-    bottom: 14px;
+    width: min(68vw, 224px);
+    right: -8px;
+    bottom: 12px;
+    padding: 16px;
+    border-radius: 22px;
+    background: rgba(255,255,255,.96);
+    border: 1px solid rgba(124,44,255,.14);
+    box-shadow: 0 20px 45px rgba(62,35,128,.20);
     z-index: 5;
   }
 
   .analysis-card.image-card img,
   .analysis-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
+    display: none;
+  }
+
+  .analysis-summary {
+    display: block;
+    color: var(--black);
+    text-align: left;
+  }
+
+  .analysis-summary-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: var(--purple);
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .analysis-summary-head b {
+    padding: 5px 8px;
+    border-radius: 999px;
+    color: #176b45;
+    background: #e6f8ef;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .analysis-summary-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .analysis-summary-metrics > div {
+    padding: 11px 10px;
+    border-radius: 14px;
+    background: linear-gradient(145deg,#fff7fb,#f6f2ff);
+    border: 1px solid rgba(124,44,255,.08);
+  }
+
+  .analysis-summary-metrics small {
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .analysis-summary-metrics strong {
+    display: block;
+    margin-top: 3px;
+    color: var(--purple);
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: -.04em;
+  }
+
+  .analysis-summary-metrics strong span {
+    font-size: 12px;
+  }
+
+  .analysis-summary-note {
+    margin-top: 12px;
+    padding-top: 11px;
+    border-top: 1px solid rgba(124,44,255,.10);
+    color: var(--text);
+    font-size: 11px;
+    font-weight: 700;
   }
 }
