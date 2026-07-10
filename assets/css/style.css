@@ -1028,7 +1028,7 @@ text-align:center;
 
   .hero-visual {
     width: 100%;
-    max-width: 390px;
+    max-width: 410px;
     margin: -6px auto 0;
     display: flex;
     justify-content: center;
@@ -1037,7 +1037,7 @@ text-align:center;
   }
 
   .phone-wrap {
-    width: min(390px, calc(100vw - 12px));
+    width: min(410px, calc(100vw - 8px));
     max-width: 100%;
     padding: 0 0 20px;
     margin: 0 auto;
@@ -1049,7 +1049,7 @@ text-align:center;
     width: 100%;
     aspect-ratio: 9 / 19.5;
     height: auto;
-    padding: 24px 18px 22px;
+    padding: 20px 12px 18px;
     border-radius: 48px;
     margin: 0 auto;
     background: #fff;
@@ -1058,9 +1058,9 @@ text-align:center;
   }
 
   .analysis-card {
-    width: 205px;
-    right: -20px;
-    bottom: 18px;
+    width: 195px;
+    right: -26px;
+    bottom: 26px;
     z-index: 5;
   }
 }
