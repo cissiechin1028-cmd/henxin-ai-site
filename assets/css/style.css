@@ -1045,13 +1045,13 @@ text-align:center;
     margin: 0 auto;
     padding: 0 0 28px;
     overflow: visible;
-    transform: none;
+    transform: translateX(-10px);
   }
 
   .phone {
     width: 100%;
     height: auto;
-    aspect-ratio: 9 / 18.2;
+    aspect-ratio: 9 / 17;
     margin: 0 auto;
     padding: 18px 14px 16px;
     border: 5px solid #d7dbe2;
@@ -1063,8 +1063,8 @@ text-align:center;
 
   .analysis-card {
     width: 132px;
-    right: -8px;
-    bottom: 18px;
+    right: -12px;
+    bottom: 14px;
     z-index: 5;
   }
 
@@ -1075,4 +1075,3 @@ text-align:center;
     border-radius: 16px;
   }
 }
-
