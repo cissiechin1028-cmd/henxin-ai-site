@@ -1040,12 +1040,12 @@ text-align:center;
   }
 
   .phone-wrap {
-    width: min(86vw, 340px);
+    width: min(78vw, 300px);
     position: relative;
     margin: 0 auto;
-    padding: 0 0 36px;
+    padding: 0 0 28px;
     overflow: visible;
-    transform: translateX(6px);
+    transform: none;
   }
 
   .phone {
@@ -1062,9 +1062,9 @@ text-align:center;
   }
 
   .analysis-card {
-    width: 150px;
-    right: -10px;
-    bottom: 20px;
+    width: 132px;
+    right: -8px;
+    bottom: 18px;
     z-index: 5;
   }
 
