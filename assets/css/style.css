@@ -1076,3 +1076,19 @@ text-align:center;
     margin-left: 10px;
   }
 }
+
+
+/* Mobile Hero cleanup override */
+@media (max-width:768px){
+  .hero-visual{
+    display:flex;
+    justify-content:center;
+    overflow:visible;
+  }
+  .phone-wrap{
+    transform: translateX(10px) scale(0.87) !important;
+    transform-origin: top center;
+    width:auto !important;
+    margin:0 auto !important;
+  }
+}
