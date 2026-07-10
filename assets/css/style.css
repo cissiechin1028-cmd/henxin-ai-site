@@ -975,7 +975,7 @@ text-align:center;
   .site-header { padding: 16px 18px; }
 
   .hero {
-    width: min(100% - 8px, 460px);
+    width: calc(100% - 12px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1028,7 +1028,7 @@ text-align:center;
 
   .hero-visual {
     width: 100%;
-    max-width: 450px;
+    max-width: none; width:100%;
     margin: -6px auto 0;
     display: flex;
     justify-content: center;
@@ -1037,7 +1037,7 @@ text-align:center;
   }
 
   .phone-wrap {
-    width: min(450px, calc(100vw - 8px));
+    width:100%; max-width:none;
     max-width: 100%;
     padding: 0 0 20px;
     margin: 0 auto;
@@ -1059,7 +1059,7 @@ text-align:center;
 
   .analysis-card {
     width: 195px;
-    right: -26px;
+    right:-18px;
     bottom: 26px;
     z-index: 5;
   }
