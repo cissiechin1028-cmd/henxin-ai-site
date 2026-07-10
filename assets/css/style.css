@@ -97,7 +97,7 @@ button {
   margin: 22px auto 0;
   padding: 0 20px 0 18px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   border: 1px solid rgba(124, 44, 255, 0.12);
   border-radius: 999px;
