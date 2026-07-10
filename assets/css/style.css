@@ -1066,3 +1066,13 @@ text-align:center;
     z-index: 5;
   }
 }
+
+
+/* Mobile hero final scale adjustment */
+@media (max-width:768px){
+  .phone-wrap{
+    transform: scale(0.87);
+    transform-origin: top center;
+    margin-left: 10px;
+  }
+}
