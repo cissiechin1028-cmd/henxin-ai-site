@@ -1078,28 +1078,38 @@ text-align:center;
 }
 
 
-/* Mobile Hero cleanup override */
+
+
+/* ===== Clean Mobile Hero ===== */
 @media (max-width:768px){
+  .hero{
+    padding:24px 12px 40px;
+  }
   .hero-visual{
     display:flex;
     justify-content:center;
     overflow:visible;
+    width:100%;
   }
   .phone-wrap{
-    transform: translateX(10px) scale(0.87) !important;
-    transform-origin: top center;
-    width:auto !important;
-    margin:0 auto !important;
+    position:relative;
+    width:100%;
+    max-width:360px;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    transform:none;
   }
-}
-
-
-@media (max-width:768px){
-  .phone-wrap{
-    transform: translateX(10px);
+  .phone{
+    width:100%;
+    max-width:320px;
+    aspect-ratio:9/18;
+    height:auto;
   }
   .analysis-card{
-    transform: scale(.87);
-    transform-origin: bottom right;
+    position:absolute;
+    width:165px;
+    right:-12px;
+    bottom:42px;
   }
 }
