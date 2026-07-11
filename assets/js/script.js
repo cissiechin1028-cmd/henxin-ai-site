@@ -178,6 +178,20 @@ if (analysis) {
 }
 
 // ===========================
+// Mobile Full Report Toggle
+// ===========================
+
+const reportToggle = document.querySelector(".report-toggle");
+
+if (analysis && reportToggle) {
+  reportToggle.addEventListener("click", () => {
+    const isOpen = analysis.classList.toggle("report-open");
+    reportToggle.setAttribute("aria-expanded", String(isOpen));
+    reportToggle.textContent = isOpen ? "レポートを閉じる" : "分析レポートをすべて見る";
+  });
+}
+
+// ===========================
 // Parallax Background
 // ===========================
 
