@@ -151,47 +151,6 @@ bubbles.forEach((bubble, index) => {
 });
 
 // ===========================
-// Analysis Card Pop
-// ===========================
-
-const analysis = document.querySelector(".analysis-card");
-
-if (analysis) {
-  analysis.animate(
-    [
-      {
-        opacity: 0,
-        transform: "translateY(40px) scale(.95)",
-      },
-      {
-        opacity: 1,
-        transform: "translateY(0) scale(1)",
-      },
-    ],
-    {
-      duration: 700,
-      delay: 1300,
-      fill: "forwards",
-      easing: "ease-out",
-    }
-  );
-}
-
-// ===========================
-// Mobile Full Report Toggle
-// ===========================
-
-const reportToggle = document.querySelector(".report-toggle");
-
-if (analysis && reportToggle) {
-  reportToggle.addEventListener("click", () => {
-    const isOpen = analysis.classList.toggle("report-open");
-    reportToggle.setAttribute("aria-expanded", String(isOpen));
-    reportToggle.textContent = isOpen ? "レポートを閉じる" : "分析レポートをすべて見る";
-  });
-}
-
-// ===========================
 // Parallax Background
 // ===========================
 
